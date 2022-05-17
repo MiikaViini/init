@@ -1,0 +1,2 @@
+# in debian terminal su - <username>
+# in Iterm: ssh <username>@<user ip address>

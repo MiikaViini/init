@@ -1,0 +1,3 @@
+# vm network adapter ->bridged
+# from iterm run command:
+# ssh<user>@<ip address>

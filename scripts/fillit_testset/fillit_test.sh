@@ -6,6 +6,7 @@ GREEN='\033[4;32m'
 GREENB='\033[0;32m'
 YELLOW='\033[1;7;33m'
 ENDCOLOR='\033[0m'
+
 printf "${GREENB}*********************************************************${ENDCOLOR} \n"
 printf "${GREENB}*WELCOME TO FILLIT TESTER, CHOOSE NUMBER AND PRESS ENTER*${ENDCOLOR} \n"
 printf "${GREENB}*********************************************************${ENDCOLOR} \n"
@@ -25,6 +26,7 @@ do
 #
 # reading fillits results to output_invalid
 #
+	clear
 	while [ $INVALID_FILE -le 20 ]
 	do
 		.././fillit testfiles/invalid_files/$INVALID_FILE 2>&1 >results/output_invalid
@@ -90,7 +92,10 @@ do
 
 	clear
 
-	printf "${YELLOW}USAGE TEST${ENDCOLOR}\n"
+	printf "************\n"
+	printf "*${YELLOW}USAGE TEST${ENDCOLOR}*\n"
+	printf "************"
+	printf "\n"
 	printf "\n"
 	printf "./fillit\n"
 	printf "${YELLOW}YOUR PROGRAM OUTPUT${ENDCOLOR} "
@@ -115,25 +120,59 @@ do
 			read key
 		fi
 	done
+
 	clear
 
-	printf "${YELLOW}EVALUATION FORM SPEEDTEST 1${ENDCOLOR}\n"
+	printf "*****************************\n"
+	printf "*${YELLOW}EVALUATION FORM SPEEDTEST 1${ENDCOLOR}*\n"
+	printf "*****************************\n"
 	printf "\n"
 	{ time .././fillit testfiles/valid_files/3; }
-	printf "${YELLOW}SHOULD BE UNDER 1 SECOND${ENDCOLOR}\n"
 
+	printf "${YELLOW}SHOULD BE UNDER 1 SECOND${ENDCOLOR}\n"
 	printf "\n"
-	printf "${YELLOW}EVALUATION FORM SPEEDTEST 7${ENDCOLOR}\n"
+	printf "Press ENTER to continue \n"
+
+	read keys
+
+	while [[ $keys != "" ]]
+	do
+		if [ $keys == "" ]
+			then
+				break
+		else
+			clear
+			printf "Press ENTER to continue \n"
+			read keys
+		fi
+	done
+
+	clear
+
+	printf "*****************************\n"
+	printf "*${YELLOW}EVALUATION FORM SPEEDTEST 7${ENDCOLOR}*\n"
+	printf "*****************************\n"
 	printf "\n"
 	{ time .././fillit testfiles/valid_files/16; }
 	printf "${YELLOW}SHOULD BE UNDER 30 SECONDS${ENDCOLOR}\n"
 	printf "\n"
 	printf "Press ENTER to continue \n"
-	read
 
-	clear
+	read key
 
-	printf "${RED}*********END OF TEST*************${ENDCOLOR}\n"
+	while [[ $key != "" ]]
+	do
+		if [ $key == "" ]
+			then
+				break
+		else
+			clear
+			printf "Press ENTER to continue \n"
+			read key
+		fi
+	done
+
+	printf "${RED}*********END OF TESTS*************${ENDCOLOR}\n"
 
 	sleep 2
 
@@ -141,9 +180,11 @@ do
 
 	printf "${GREEN}WELCOME TO FILLIT TESTER, CHOOSE NUMBER AND PRESS ENTER${ENDCOLOR} \n"
 	printf "\n"
-	printf "${GREEN}1. RUN TESTS${ENDCOLOR} \n"
+	printf "${GREEN}1. RUN TESTS AGAIN${ENDCOLOR} \n"
 	printf "${GREEN}2. EXIT${ENDCOLOR} \n"
+
 	read operation
+
 done
 
 clear
