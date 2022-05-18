@@ -1,1 +1,1 @@
-dhcp-ns1.hive.fi
+nslookup 10.11.6.12 | grep "name" | cut -d ' ' -f3

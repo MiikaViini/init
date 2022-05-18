@@ -1,2 +1,2 @@
-#kill <PID>, process id
+#kill <PID>, process id, to get PID run top or jobs -l
 kill

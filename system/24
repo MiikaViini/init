@@ -1,1 +1,2 @@
-sudo apt-get list -installed
+#apt list --installed #for installed packages
+#apt list #for all

@@ -1,2 +1,3 @@
 #sudo pkill sshd
 #kill <PID of any sshd>
+#sudo pkill ssh 
