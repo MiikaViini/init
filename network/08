@@ -1,0 +1,3 @@
+#nslookup who.int and you get the ip used below
+
+whois 104.17.113.188 | grep "Organization" | cut -d ' ' -f4 -f5

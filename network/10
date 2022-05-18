@@ -1,0 +1,5 @@
+#The traceroute command is used to determine the path between two connections. 
+#Often a connection to another device will have to go through multiple routers. 
+#The traceroute command will return the names or IP addresses of all the routers between two devices.
+
+traceroute who.int
