@@ -1,5 +1,7 @@
 #!/bin/bash
+
 clear
+
 RED='\033[4;31m'
 RED='\033[1;7;31m'
 GREEN='\033[4;32m'
@@ -23,10 +25,96 @@ do
 	INVALID_FILE='1'
 	VALID_ANSWER='1'
 	PASSED='0'
-#
-# reading fillits results to output_invalid
-#
+	#
+	#Makefile tests
+	#
 	clear
+	printf "*****************\n"
+	printf "*${YELLOW}MAKEFILE TESTS${ENDCOLOR}*\n"
+	printf "*****************"
+	printf "\n"
+	printf "\n"
+	printf "make \n"
+	make -C ../
+	
+	printf "\n"
+	printf "Press ENTER to continue \n"
+	read
+	clear
+	printf "*****************\n"
+	printf "*${YELLOW}MAKEFILE TESTS${ENDCOLOR}*\n"
+	printf "*****************"
+	printf "\n"
+	printf "\n"
+	printf "make again\n"
+	make -C ../
+
+	printf "\n"
+	printf "Press ENTER to continue \n"
+	read
+	clear
+
+	printf "*****************\n"
+	printf "*${YELLOW}MAKEFILE TESTS${ENDCOLOR}*\n"
+	printf "*****************"
+	printf "\n"
+	printf "\n"
+	printf "make clean\n"
+	make -C ../ clean
+
+	printf "\n"
+	printf "Press ENTER to continue \n"
+	read
+	clear
+
+	printf "*****************\n"
+	printf "*${YELLOW}MAKEFILE TESTS${ENDCOLOR}*\n"
+	printf "*****************"
+	printf "\n"
+	printf "\n"
+	printf "make re\n"
+	make -C ../ re
+
+	printf "\n"
+	printf "Press ENTER to continue \n"
+	read
+	clear
+
+	printf "*****************\n"
+	printf "*${YELLOW}MAKEFILE TESTS${ENDCOLOR}*\n"
+	printf "*****************"
+	printf "\n"
+	printf "\n"
+	printf "make fclean\n"
+	make -C ../ fclean
+
+	printf "\n"
+	printf "Press ENTER to continue \n"
+	read
+	clear
+
+	printf "*****************\n"
+	printf "*${YELLOW}MAKEFILE TESTS${ENDCOLOR}*\n"
+	printf "*****************"
+	printf "\n"
+	printf "\n"
+	printf "make all\n"
+	make -C ../ all
+
+	printf "\n"
+	printf "Press ENTER to continue \n"
+	read
+	clear
+
+	#
+	# reading fillits results to output_invalid
+	#
+
+	printf "**************\n"
+	printf "*${YELLOW}SOLVER TESTS${ENDCOLOR}*\n"
+	printf "**************"
+	printf "\n"
+	printf "\n"
 	while [ $INVALID_FILE -le 20 ]
 	do
 		.././fillit testfiles/invalid_files/$INVALID_FILE 2>&1 >results/output_invalid
@@ -178,11 +266,13 @@ do
 
 	clear
 
-	printf "${GREEN}WELCOME TO FILLIT TESTER, CHOOSE NUMBER AND PRESS ENTER${ENDCOLOR} \n"
+	printf "${GREENB}*********************************************************${ENDCOLOR} \n"
+	printf "${GREENB}*WELCOME TO FILLIT TESTER, CHOOSE NUMBER AND PRESS ENTER*${ENDCOLOR} \n"
+	printf "${GREENB}*********************************************************${ENDCOLOR} \n"
 	printf "\n"
-	printf "${GREEN}1. RUN TESTS AGAIN${ENDCOLOR} \n"
-	printf "${GREEN}2. EXIT${ENDCOLOR} \n"
-
+	printf "${GREENB}1. RUN TESTS${ENDCOLOR} \n"
+	printf "${GREENB}2. EXIT${ENDCOLOR} \n"
+	
 	read operation
 
 done
