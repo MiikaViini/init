@@ -1,0 +1,6 @@
+Add fillit_testset folder to root of your fillit and
+bash fillit_test.sh
+
+There is 20 valid maps and 20 invalid maps
+Testing for norminette
+Evaluation form tests included
