@@ -1,2 +1,8 @@
-#external ip of 42.fr
+#external ip of 42.fr and intra.fr.42 is
+#Name:	intra.42.fr
+#Address: 163.172.250.11
+#Name:	intra.42.fr
+#Address: 163.172.250.12
+#Name:	intra.42.fr
+#Address: 163.172.250.13
 163.172.250.16
