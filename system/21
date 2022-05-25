@@ -2,7 +2,7 @@
 # does not work properly if have deleted user without -r
 ls /home
 
-# real users UID is between 1000 and 60000
+# regular real user range is between 1000 and 60000(UID)
 # getent get entries from textfiles/databases
 getent passwd {1000..65533}
 

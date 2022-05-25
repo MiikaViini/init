@@ -1,2 +1,2 @@
 #apt list --installed #for installed packages
-#apt list #for all
+#apt list for all

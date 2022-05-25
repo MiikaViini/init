@@ -1,1 +1,1 @@
-systectl -at service
+systemctl -at service
