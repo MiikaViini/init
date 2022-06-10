@@ -1,0 +1,4 @@
+sudo systemctl restart sshd
+# su - systemctl restart sshd
+# works also with: systemctl restart ssh
+# sshd is "server" and ssh is "client"

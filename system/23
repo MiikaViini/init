@@ -1,0 +1,7 @@
+#for graphical:
+# type your login to "login"
+# and password to "password"
+
+# for ssh:
+# in debian terminal su - <username>
+# in Iterm: ssh <username>@<user ip address>

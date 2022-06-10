@@ -1,0 +1,5 @@
+/etc/hostname
+
+# check /etc/host file for ssh problems, it may not update the 
+# hostname  to this file
+

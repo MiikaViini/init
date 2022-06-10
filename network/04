@@ -1,1 +1,6 @@
+# route command is a command to view or manipulate ip routingtables
+# "-n", bypass attempts to print host and network names symbolically when reporting actions.
+# "get" lookup and display the route for a destination.
+# A default gateway is a device that forwards data from one network to another.
+
 route -n get default | grep "gateway:"| cut -d ' ' -f6

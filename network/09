@@ -1,2 +1,15 @@
-#external ip of 42.fr
-163.172.250.16
+# You find external IP with nslookup
+# and using external DNS server for that 
+# ie. nslookup 42.fr 8.8.8.8 (which is google)
+
+# intra.fr.42 is
+# Name:	intra.42.fr
+# Address: 163.172.250.11
+# Name:	intra.42.fr
+# Address: 163.172.250.12
+# Name:	intra.42.fr
+# Address: 163.172.250.13
+# external ip of 42.fr
+
+# 42.fr external ip is
+# 163.172.250.16

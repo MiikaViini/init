@@ -1,1 +1,5 @@
+# DHCP = Dynamic Host Configuration Protocol
+# it gives a ip address for every device in same network.
+# it could give other settings aswell, like default gateway and nameserver and other things
+
 ipconfig getifaddr en0

@@ -1,0 +1,2 @@
+#run jobs -l and you see tail running in backround
+tail -f /var/log/syslog &

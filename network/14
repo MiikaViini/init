@@ -1,1 +1,4 @@
+# etc = et cetera OR editable-text-configurations
+# when machine starts it need to know mapping of some hostnames to
+# IP addresses before DNS can be referenced
 /etc/hosts

@@ -1,0 +1,6 @@
+# vm network adapter NAT
+# port forwarding -> set host port to any
+# BEWARE that its not in use!!
+# from iterm run command:
+
+# ssh -p <hostport> <user>@<ip address>

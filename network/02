@@ -1,5 +1,15 @@
 #2a
-ifconfig en0 | grep "broadcast" | cut -d ' ' -f6 
+#ifconfig en0 | grep "broadcast" | cut -d ' ' -f6
 
 #2b
-arp -a | cut -d "(" -f 2 | cut -d ")" -f 1 | grep "10.11"
+#ping arp -a | cut -d "(" -f 2 | cut -d ")" -f 1 | grep "10.11"
+
+# pinging broadcast address and grepping answers "from" and putting the to
+# textfile and sort and remove duplicates and unnecessary chara
+#ping -c 2 192.168.1.255 | grep "from" | cut -d ' ' -f4 >> text.txt | sort text.txt | uniq | cut -d ':' -f 1
+#ping -c 2 192.168.1.255 | grep "from" | cut -d ' ' -f4 | awk '!x[$0]++'| cut -d ':' -f 1
+
+#ping -c 2 $(ifconfig en0 | grep "broadcast" | cut -d ' ' -f6) | grep "from" | cut -d ' ' -f4 | awk '!x[$0]++'| cut -d ':' -f 1 | sort
+
+
+

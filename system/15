@@ -1,0 +1,9 @@
+# If the question is referring the last question anwer is
+# kill $(jobs -l | grep tail | cut -d ' ' -f4)
+
+# If in general answer is:
+# kill <PID>, process id, to get PID run top or jobs -l
+# OR
+# pkill <process name> 
+# kills process referring its name
+

@@ -1,5 +1,4 @@
+# The networksetup command is used to configure network settings typically configured in the System Preferences application.  The networksetup
+# command requires at least "admin" privileges to run. Most of the set commands require "root" privileges to run.
+
 networksetup -getmacaddress en1 | cut -d ' ' -f3
-
-ifconfig en1 | awk '/ether/{print $2}'
-
-ifconfig en1 | grep "ether" | cut -d ' ' -f2

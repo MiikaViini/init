@@ -1,1 +1,3 @@
-nslookup who.int | grep "Address:" | cut -d ' ' -f2	
+# DNS = Domain name system, changing domains to ip addresses
+
+nslookup who.int | grep "Address:" | cut -d ' ' -f2 | tail -n +2	

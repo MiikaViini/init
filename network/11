@@ -1,1 +1,5 @@
-#Device is nat and ip is 10.60.1.1
+# NAT = Network address translation
+# it allows you several machines of same network to
+# get internet with sharing the same IP
+
+# Device is nat and ip is 10.60.1.1
