@@ -4,3 +4,6 @@
 # from iterm run command:
 
 # ssh -p <hostport> <user>@<ip address>
+# vm network adapter ->bridged
+# from iterm run command:
+# ssh<user>@<ip address>

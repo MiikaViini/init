@@ -1,2 +1,3 @@
 #nslookup $(ipconfig getifaddr en0) | grep "name" | cut -d ' ' -f3
 #nslookup your public ip 
+nslookup 10.11.6.12 | grep "name" | cut -d ' ' -f3

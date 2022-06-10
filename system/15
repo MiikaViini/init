@@ -6,4 +6,7 @@
 # OR
 # pkill <process name> 
 # kills process referring its name
+#kill <PID>, process id, to get PID run top or jobs -l
+sudo pkill tail
+# pkill tail
 
